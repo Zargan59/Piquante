@@ -33,7 +33,7 @@ const jwt = require('jsonwebtoken')
                              userId: user._id,
                              token : jwt.sign(
                                 {userId: user._id},
-                                "RANDOM_TOKEN_SECRET",
+                                'UkFORE9NX1RPS0VOX1NFQ1JFVA==',
                                 {expiresIn: '24h'}
                              )
                          })
