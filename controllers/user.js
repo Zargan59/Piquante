@@ -30,9 +30,9 @@ const jwt = require('jsonwebtoken')
                          res.status(401).json({message : 'Identifiant ou mot de passse incorect'})
                      } else {
                          res.status(200).json({
-                             userId: user._id,
+                             UserId: user._id,
                              token : jwt.sign(
-                                {userId: user._id},
+                                {UserId: user._id},
                                 'UkFORE9NX1RPS0VOX1NFQ1JFVA==',
                                 {expiresIn: '24h'}
                              )

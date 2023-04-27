@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 
 //Création du modèle de sauce 
 const SauceSchema = mongoose.Schema({
-    userid :{type : String, require : true},
+    userId :{type : String, require : true},
     name : {type: String, require : true},
     manufacturer : {type: String, require : true},
     description : {type: String, require : true},
